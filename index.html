@@ -1,0 +1,3584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Indian Property Show — London Edition 2026</title>
+  <meta name="description"
+    content="Premium Indian real estate investment event in London. Explore luxury homes, villas, and high-growth investment projects tailored for NRIs.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ============================================
+   PREMIUM DARK THEME — THE INDIAN PROPERTY SHOW
+   Color Palette matched to hero nightscape image:
+   Deep navy, warm gold, amber glows, rich blacks
+   ============================================ */
+
+    :root {
+      /* Core Dark Palette */
+      --color-bg-deep: #07090f;
+      --color-bg-primary: #0a0e1a;
+      --color-bg-card: #0f1423;
+      --color-bg-elevated: #141a2e;
+      --color-bg-glass: rgba(15, 20, 35, 0.7);
+
+      /* Accent Colors */
+      --color-gold: #D4A537;
+      --color-gold-light: #f0d078;
+      --color-gold-dim: rgba(212, 165, 55, 0.15);
+      --color-amber: #e8923a;
+      --color-red: #C41E3A;
+      --color-red-glow: rgba(196, 30, 58, 0.4);
+      --color-blue-accent: #1e3a6a;
+
+      /* Text */
+      --color-text-primary: #f0ece4;
+      --color-text-secondary: rgba(240, 236, 228, 0.6);
+      --color-text-muted: rgba(240, 236, 228, 0.35);
+
+      /* Borders */
+      --border-subtle: rgba(212, 165, 55, 0.12);
+      --border-glow: rgba(212, 165, 55, 0.3);
+
+      /* Typography */
+      --font-heading: 'Inter', sans-serif;
+      --font-body: 'Inter', sans-serif;
+
+      /* Motion */
+      --ease-premium: cubic-bezier(0.25, 0.8, 0.25, 1);
+      --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --transition-smooth: 0.4s var(--ease-premium);
+      --transition-fast: 0.25s var(--ease-premium);
+
+      /* Shadows */
+      --shadow-glow-gold: 0 0 30px rgba(212, 165, 55, 0.15), 0 0 60px rgba(212, 165, 55, 0.05);
+      --shadow-glow-red: 0 0 30px rgba(196, 30, 58, 0.2);
+      --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+      --shadow-card-hover: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 165, 55, 0.08);
+    }
+
+    /* ====== RESET & BASE ====== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-gold) var(--color-bg-deep);
+    }
+
+    html::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    html::-webkit-scrollbar-track {
+      background: var(--color-bg-deep);
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background: var(--color-gold);
+      border-radius: 4px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-primary);
+      background-color: var(--color-bg-deep);
+      line-height: 1.6;
+      /* Removed overflow-x: hidden as it breaks position: sticky */
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Prevent horizontal scroll globally without breaking sticky */
+    html,
+    body {
+      overflow-x: clip;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ====== GLOBAL SECTION STYLES ====== */
+    section {
+      padding: 7rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-tag .line {
+      width: 30px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-gold), transparent);
+    }
+
+    .section-heading {
+      font-size: 3rem;
+      color: var(--color-text-primary);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .section-heading .gold {
+      color: var(--color-gold);
+    }
+
+    .section-subtext {
+      font-size: 1.1rem;
+      color: var(--color-text-secondary);
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-center .section-subtext {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ====== BUTTONS ====== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2.2rem;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: all 0.4s var(--ease-premium);
+      cursor: pointer;
+      border: none;
+      font-family: var(--font-body);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-red) 0%, #a0172e 100%);
+      color: white;
+      box-shadow: 0 4px 20px var(--color-red-glow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 30px var(--color-red-glow), 0 0 40px rgba(196, 30, 58, 0.15);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-gold);
+      border: 1px solid var(--border-glow);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-gold-dim);
+      border-color: var(--color-gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-glow-gold);
+    }
+
+    /* ====== PARTICLE CANVAS ====== */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    /* ====== NAVIGATION ====== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.2rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      transition: all 0.5s var(--ease-premium);
+      background: transparent;
+    }
+
+    .navbar.scrolled {
+      background: rgba(7, 9, 15, 0.92);
+      backdrop-filter: blur(20px) saturate(1.5);
+      padding: 0.8rem 2.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-logo {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: var(--transition-smooth);
+    }
+
+    .nav-logo span {
+      color: var(--color-gold);
+    }
+
+    .nav-logo:hover {
+      opacity: 0.85;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2.5rem;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .nav-links a {
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: var(--transition-smooth);
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-gold);
+      transition: width 0.3s var(--ease-premium);
+    }
+
+    .nav-links a:hover {
+      color: var(--color-gold);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .nav-cta {
+      padding: 0.6rem 1.4rem !important;
+      font-size: 0.75rem !important;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .mobile-menu-btn:hover {
+      color: var(--color-gold);
+    }
+
+    /* ====== HERO SECTION ====== */
+    .hero {
+      height: 100vh;
+      min-height: 750px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom,
+          rgba(7, 9, 15, 0.3) 0%,
+          rgba(7, 9, 15, 0.1) 40%,
+          rgba(7, 9, 15, 0.6) 70%,
+          rgba(7, 9, 15, 1) 100%);
+    }
+
+    /* Animated glow orbs in hero */
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 2;
+      animation: orbFloat 8s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .hero-orb-1 {
+      width: 400px;
+      height: 400px;
+      background: rgba(212, 165, 55, 0.08);
+      top: 20%;
+      right: -100px;
+      animation-delay: 0s;
+    }
+
+    .hero-orb-2 {
+      width: 300px;
+      height: 300px;
+      background: rgba(196, 30, 58, 0.06);
+      bottom: 30%;
+      left: -50px;
+      animation-delay: -4s;
+    }
+
+    @keyframes orbFloat {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      25% {
+        transform: translate(30px, -20px) scale(1.05);
+      }
+
+      50% {
+        transform: translate(-20px, 15px) scale(0.95);
+      }
+
+      75% {
+        transform: translate(15px, 25px) scale(1.03);
+      }
+    }
+
+    /* ====== HERO INFO ====== */
+    .hero-info {
+      position: relative;
+      z-index: 10;
+      padding: 6rem 0 5rem;
+      background: linear-gradient(to bottom, transparent 0%, var(--color-bg-deep) 100%);
+    }
+
+    .hero-info .container {
+      text-align: center;
+      max-width: 900px;
+    }
+
+    .london-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--color-gold-dim);
+      border: 1px solid var(--border-glow);
+      color: var(--color-gold);
+      padding: 0.5rem 1.8rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+    }
+
+    .london-badge .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--color-gold);
+      border-radius: 50%;
+      animation: pulseDot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulseDot {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.8);
+      }
+    }
+
+    .hero-info h1 {
+      font-size: 4.2rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.15;
+      background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-gold-light) 50%, var(--color-text-primary) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmerText 4s ease-in-out infinite;
+    }
+
+    .london-flag-text {
+      background: linear-gradient(90deg, #012169 0%, #FFFFFF 50%, #C8102E 100%, #012169 150%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmerText 4s linear infinite;
+      display: inline-block;
+      font-weight: 800;
+    }
+
+    @keyframes shimmerText {
+      0% {
+        background-position: 0% center;
+      }
+
+      50% {
+        background-position: 100% center;
+      }
+
+      100% {
+        background-position: 0% center;
+      }
+    }
+
+    .hero-highlight {
+      font-size: 1.8rem;
+      color: var(--color-red);
+      font-family: var(--font-heading);
+      margin-bottom: 1.5rem;
+      font-style: italic;
+      text-shadow: 0 0 40px var(--color-red-glow);
+    }
+
+    .hero-info>.container>p {
+      font-size: 1.05rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.8;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-text-muted);
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: scrollBounce 2s ease-in-out infinite;
+    }
+
+    .scroll-indicator .scroll-line {
+      width: 1px;
+      height: 30px;
+      background: linear-gradient(to bottom, var(--color-gold), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollBounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(8px);
+      }
+    }
+
+    @keyframes scrollPulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    /* ====== TRUST STRIP ====== */
+    .trust-strip {
+      background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-elevated) 100%);
+      padding: 4rem 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      position: relative;
+      z-index: 2;
+    }
+
+    .trust-grid {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .trust-item {
+      text-align: center;
+      position: relative;
+    }
+
+    .trust-item::after {
+      content: '';
+      position: absolute;
+      right: -1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 40px;
+      background: var(--border-subtle);
+    }
+
+    .trust-item:last-child::after {
+      display: none;
+    }
+
+    .trust-number {
+      font-family: var(--font-heading);
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .trust-label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-text-secondary);
+    }
+
+    /* ====== HEROES / AMY JACKSON SECTION ====== */
+    .heroes-section {
+      min-height: 80vh;
+      background-image: url('IMG_20260608_204629.png');
+      background-size: cover;
+      background-position: center right;
+      background-attachment: fixed;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .heroes-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(7, 9, 15, 0.85) 0%, rgba(7, 9, 15, 0.4) 100%);
+      z-index: 1;
+    }
+
+    .glassy-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(0px);
+      transition: all 0.4s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .heroine-wrapper {
+      position: absolute;
+      bottom: -2rem;
+      right: -5rem;
+      height: 105%;
+      width: auto;
+      z-index: 3;
+      pointer-events: none;
+      filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8)) drop-shadow(0 0 30px rgba(212, 175, 55, 0.4));
+    }
+
+    .heroine-cutout-overlay {
+      height: 100%;
+      width: auto;
+      clip-path: inset(2% 5% 2% 45%);
+      pointer-events: auto;
+      transition: transform 0.4s var(--ease-premium);
+      cursor: pointer;
+      display: block;
+    }
+
+    .heroine-cutout-overlay:hover {
+      transform: scale(1.05);
+    }
+
+    .heroes-section:has(.heroine-cutout-overlay:hover) .glassy-overlay {
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .heroes-section .container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .hero-content-box {
+      max-width: 55%;
+      background: var(--color-bg-glass);
+      padding: 3.5rem;
+      border-radius: 16px;
+      backdrop-filter: blur(20px) saturate(1.4);
+      border: 1px solid var(--border-glow);
+      box-shadow: var(--shadow-card), var(--shadow-glow-gold);
+    }
+
+    .hero-content-box h2 {
+      font-size: 3rem;
+      color: var(--color-text-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content-box h2 .gold {
+      color: var(--color-gold);
+    }
+
+    .hero-content-box h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-gold), transparent);
+      margin-top: 1rem;
+    }
+
+    .hero-content-box p {
+      font-size: 1.1rem;
+      color: var(--color-text-secondary);
+      line-height: 1.9;
+    }
+
+    /* ====== ABOUT SECTION ====== */
+    .about-section {
+      background: var(--color-bg-deep);
+    }
+
+    .about-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h2 {
+      font-size: 2.8rem;
+      color: var(--color-text-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-gold), transparent);
+      margin: 1rem 0 0 0;
+    }
+
+    .about-content p {
+      font-size: 1.05rem;
+      color: var(--color-text-secondary);
+      line-height: 1.9;
+    }
+
+    .about-image {
+      flex: 1;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      transition: transform 0.6s var(--ease-premium);
+    }
+
+    .about-image:hover img {
+      transform: scale(1.03);
+    }
+
+    .about-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      border: 1px solid var(--border-glow);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .about-image::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--color-gold-dim), transparent, var(--color-gold-dim));
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .about-image:hover::after {
+      opacity: 1;
+    }
+
+    /* ====== WHY ATTEND SECTION ====== */
+    .why-attend {
+      background: var(--color-bg-primary);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: var(--color-bg-card);
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      transition: all 0.5s var(--ease-premium);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-glow);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+
+    .feature-icon {
+      width: 65px;
+      height: 65px;
+      background: var(--color-gold-dim);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 1.5rem;
+      transition: all 0.4s var(--ease-premium);
+    }
+
+    .feature-card:hover .feature-icon {
+      background: var(--color-gold);
+      border-color: var(--color-gold);
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 0 25px rgba(212, 165, 55, 0.3);
+    }
+
+    .feature-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: var(--color-text-primary);
+      font-family: var(--font-body);
+      font-weight: 600;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ====== PROPERTIES SECTION ====== */
+    .properties {
+      background: linear-gradient(180deg, var(--color-bg-deep) 0%, var(--color-bg-primary) 100%);
+    }
+
+    .category-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .category-item {
+      border: 1px solid var(--border-subtle);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-radius: 12px;
+      transition: all 0.5s var(--ease-premium);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--color-bg-card);
+    }
+
+    .category-item .cat-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+      transition: transform 0.4s var(--ease-bounce);
+    }
+
+    .category-item:hover .cat-icon {
+      transform: scale(1.2) translateY(-5px);
+    }
+
+    .category-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 40%, rgba(212, 165, 55, 0.08) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .category-item:hover {
+      border-color: var(--color-gold);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-glow-gold);
+    }
+
+    .category-item:hover::before {
+      opacity: 1;
+    }
+
+    .category-item h3 {
+      font-size: 1.15rem;
+      font-family: var(--font-body);
+      font-weight: 500;
+      position: relative;
+      z-index: 2;
+      color: var(--color-text-primary);
+    }
+
+    /* ====== ROADMAP SECTION (REDESIGN) ====== */
+    .roadmap-section {
+      background-color: var(--color-bg-primary);
+      /* Revert to dark theme */
+      padding: 7rem 0;
+      font-family: var(--font-primary);
+    }
+
+    .roadmap-header {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    .roadmap-event-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      /* Match theme gold */
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .roadmap-event-tag .line {
+      height: 1px;
+      width: 30px;
+      background-color: var(--color-gold);
+    }
+
+    .roadmap-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      /* White text for dark theme */
+      margin: 0;
+      letter-spacing: -0.5px;
+    }
+
+    .roadmap-wrapper {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .roadmap-track {
+      position: absolute;
+      top: 50px;
+      /* Center of the 100px circles */
+      left: 0;
+      right: 0;
+      height: 3px;
+      display: flex;
+      z-index: 1;
+    }
+
+    .bg-dark-blue {
+      background: linear-gradient(to right, var(--color-gold) 0%, var(--color-red) 100%);
+    }
+
+    .bg-red {
+      background-color: var(--color-red);
+    }
+
+    .bg-light-grey {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .roadmap-points-container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .roadmap-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 180px;
+    }
+
+    .rm-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 2rem;
+      background-color: var(--color-bg-card);
+      /* Dark theme circle */
+      border: 1px solid var(--border-subtle);
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+      z-index: 5;
+    }
+
+    /* DAC Developers Exact Animation Effect */
+    .rm-circle::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      margin-top: -150px;
+      margin-left: -150px;
+      background: url("https://dacdevelopers.com/wp-content/themes/Avada-Child-Theme/images/our-journy-bg.jpg") center center / 100% no-repeat;
+      animation: rotate 20s linear infinite;
+      /* Invert the image to make the rings white, increase contrast */
+      filter: invert(1) grayscale(1) contrast(5) brightness(0.8);
+      mix-blend-mode: screen;
+      opacity: 0.4;
+      z-index: -1;
+      pointer-events: none;
+      /* FADE OUT THE EDGES SO IT'S NOT A SQUARE BOX */
+      border-radius: 50%;
+      -webkit-mask-image: radial-gradient(circle, black 50%, transparent 70%);
+      mask-image: radial-gradient(circle, black 50%, transparent 70%);
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .rm-flag {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 24px;
+      height: 18px;
+      border-radius: 2px;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Completed (Germany) */
+    .rm-completed {
+      background: linear-gradient(135deg, var(--color-bg-elevated), var(--color-bg-card));
+      color: var(--color-gold);
+      border-color: var(--color-gold);
+      box-shadow: 0 0 20px rgba(212, 165, 55, 0.2);
+      font-size: 2.5rem;
+    }
+
+    /* Active (London) */
+    .rm-active {
+      border: 3px solid var(--color-gold);
+      color: var(--color-gold);
+      font-weight: 700;
+      font-size: 1.2rem;
+      box-shadow: 0 0 40px rgba(212, 165, 55, 0.4);
+      background-color: var(--color-bg-card);
+      animation: activeGoldGlow 2s ease-in-out infinite;
+    }
+
+    @keyframes activeGoldGlow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(212, 165, 55, 0.2);
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(212, 165, 55, 0.6);
+      }
+    }
+
+    /* Upcoming (London/Japan) */
+    .rm-upcoming {
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      background-color: transparent;
+      color: var(--color-text-muted);
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .rm-content {
+      text-align: center;
+    }
+
+    .rm-country {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+      /* White text */
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.5px;
+    }
+
+    .rm-date {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      /* Grey text */
+      margin: 0 0 1.5rem 0;
+      letter-spacing: 1px;
+    }
+
+    .rm-badge {
+      display: inline-block;
+      padding: 0.4rem 1.2rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-radius: 4px;
+    }
+
+    .rm-badge-completed {
+      background-color: rgba(212, 165, 55, 0.1);
+      color: var(--color-gold);
+      border: 1px solid rgba(212, 165, 55, 0.3);
+    }
+
+    .rm-badge-active {
+      background-color: rgba(212, 165, 55, 0.1);
+      color: var(--color-gold);
+      border: 1px solid rgba(212, 165, 55, 0.3);
+    }
+
+    .rm-badge-upcoming {
+      background-color: transparent;
+      color: var(--color-text-muted);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* ====== MOBILE RESPONSIVENESS FOR ROADMAP ====== */
+    @media (max-width: 768px) {
+      .roadmap-points-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+      }
+
+      .roadmap-track {
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 3px;
+        height: 100%;
+        transform: translateX(-50%);
+      }
+
+      .bg-dark-blue {
+        width: 100% !important;
+        height: 25%;
+      }
+
+      .bg-red {
+        width: 100% !important;
+        height: 25%;
+      }
+
+      .bg-light-grey {
+        width: 100% !important;
+        height: 50%;
+      }
+
+      .roadmap-title {
+        font-size: 2.5rem;
+      }
+
+      .roadmap-item {
+        background: var(--color-bg-primary);
+        /* Revert from white */
+        width: 100%;
+      }
+
+      .rm-circle {
+        z-index: 3;
+      }
+    }
+
+    /* ====== DEVELOPERS SECTION (HORIZONTAL SCROLL) ====== */
+    .developers {
+      background: var(--color-bg-deep);
+    }
+
+    .horizontal-scroll-section {
+      padding: 6rem 0 4rem;
+      position: relative;
+      z-index: 5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .horizontal-scroll-header {
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    .horizontal-scroll-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .horizontal-scroll-track {
+      display: flex;
+      gap: 2.5rem;
+      width: max-content;
+      padding: 2rem 2rem 2rem 2rem;
+      will-change: transform;
+      transition: transform 0.1s ease-out;
+    }
+
+    /* Body locked state for horizontal scroll hijack */
+    body.scroll-locked {
+      overflow: hidden !important;
+    }
+
+    .dev-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: left;
+      transition: all 0.5s var(--ease-premium);
+      width: calc((100vw - 10rem) / 3);
+      /* Fits exactly 3 cards on screen */
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dev-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-glow);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .dev-logo-image {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border-subtle);
+      transition: transform 0.5s ease;
+    }
+
+    .dev-card:hover .dev-logo-image {
+      transform: scale(1.05);
+    }
+
+    .dev-logo-wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 260px;
+    }
+
+    .dev-info {
+      padding: 1.5rem;
+    }
+
+    .dev-info p {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.4rem;
+    }
+
+    .dev-info strong {
+      color: var(--color-text-primary);
+    }
+
+    .dev-info .dev-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-top: 0.8rem;
+      color: var(--color-gold);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .dev-info .dev-cta:hover {
+      color: var(--color-gold-light);
+      gap: 0.6rem;
+    }
+
+    /* ====== EVENT DETAILS SECTION ====== */
+    .event-details {
+      background: linear-gradient(135deg, var(--color-bg-primary) 0%, #050810 100%);
+      position: relative;
+    }
+
+    .event-details::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(212, 165, 55, 0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .invitation-card {
+      max-width: 620px;
+      margin: 0 auto;
+      background: var(--color-bg-glass);
+      border: 1px solid var(--border-glow);
+      padding: 3.5rem;
+      border-radius: 16px;
+      text-align: center;
+      backdrop-filter: blur(20px) saturate(1.4);
+      box-shadow: var(--shadow-card), var(--shadow-glow-gold);
+      position: relative;
+      z-index: 2;
+    }
+
+    .invitation-card h2 {
+      font-size: 2rem;
+      color: var(--color-gold);
+      margin-bottom: 2rem;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1.2rem 0;
+      text-align: left;
+      transition: background 0.3s ease;
+    }
+
+    .detail-row:hover {
+      background: rgba(212, 165, 55, 0.03);
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .detail-label {
+      color: var(--color-text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+    }
+
+    .detail-value {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--color-text-primary);
+    }
+
+    .detail-value.gold {
+      color: var(--color-gold);
+    }
+
+    /* ====== GALLERY SECTION ====== */
+    .gallery {
+      background: var(--color-bg-deep);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    .gallery-item {
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .gallery-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      padding: 2rem;
+      transition: all 0.6s var(--ease-premium);
+      position: relative;
+    }
+
+    .gallery-item:nth-child(1) .gallery-placeholder {
+      background: linear-gradient(135deg, #0a1628, #1e3a6a);
+    }
+
+    .gallery-item:nth-child(2) .gallery-placeholder {
+      background: linear-gradient(135deg, #1a0a10, #6a1e2e);
+    }
+
+    .gallery-item:nth-child(3) .gallery-placeholder {
+      background: linear-gradient(135deg, #1a150a, #6a5a1e);
+    }
+
+    .gallery-item:nth-child(4) .gallery-placeholder {
+      background: linear-gradient(135deg, #0a1a1a, #1e4a6a);
+    }
+
+    .gallery-item:nth-child(5) .gallery-placeholder {
+      background: linear-gradient(135deg, #0f0a1a, #3a1e6a);
+    }
+
+    .gallery-item:nth-child(6) .gallery-placeholder {
+      background: linear-gradient(135deg, #1a100a, #6a3a1e);
+    }
+
+    .gallery-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      z-index: 1;
+    }
+
+    .gallery-label {
+      color: var(--color-text-primary);
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      position: relative;
+      z-index: 2;
+      transform: translateY(10px);
+      opacity: 0.7;
+      transition: all 0.4s var(--ease-premium);
+    }
+
+    .gallery-item:hover .gallery-placeholder {
+      transform: scale(1.08);
+    }
+
+    .gallery-item:hover .gallery-label {
+      transform: translateY(0);
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(212, 165, 55, 0.3);
+    }
+
+    /* ====== TESTIMONIALS SECTION ====== */
+    .testimonials {
+      background: var(--color-bg-primary);
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .testi-card {
+      background: var(--color-bg-card);
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      position: relative;
+      transition: all 0.5s var(--ease-premium);
+    }
+
+    .testi-card:hover {
+      border-color: var(--border-glow);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .testi-icon {
+      color: var(--color-gold);
+      font-size: 3rem;
+      font-family: var(--font-heading);
+      line-height: 1;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+
+    .testi-text {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+    }
+
+    .testi-author {
+      font-size: 0.85rem;
+      color: var(--color-gold);
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ====== REGISTRATION SECTION ====== */
+    .registration {
+      background: var(--color-bg-deep);
+      position: relative;
+    }
+
+    .registration::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(196, 30, 58, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .reg-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--color-bg-card);
+      padding: 3.5rem;
+      border-radius: 16px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-card);
+      position: relative;
+      z-index: 2;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.6rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      letter-spacing: 0.5px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      background: var(--color-bg-elevated);
+      color: var(--color-text-primary);
+      transition: all 0.3s var(--ease-premium);
+    }
+
+    .form-control::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-gold);
+      box-shadow: 0 0 0 3px var(--color-gold-dim), 0 0 20px rgba(212, 165, 55, 0.08);
+    }
+
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4A537' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 1em;
+      padding-right: 2.5rem;
+    }
+
+    select.form-control option {
+      background: var(--color-bg-card);
+      color: var(--color-text-primary);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-submit {
+      text-align: center;
+      margin-top: 1.5rem;
+      grid-column: 1 / -1;
+    }
+
+    .form-note {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ====== WHATSAPP CTA ====== */
+    .whatsapp-cta {
+      background: linear-gradient(135deg, #1a3a28 0%, #0d2218 100%);
+      text-align: center;
+      padding: 5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .whatsapp-cta::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: rgba(37, 211, 102, 0.08);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .whatsapp-cta h2 {
+      font-family: var(--font-body);
+      font-size: 2rem;
+      font-weight: 700;
+      color: #25D366;
+      margin-bottom: 1rem;
+    }
+
+    .whatsapp-cta p {
+      color: var(--color-text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #25D366;
+      color: white;
+      font-weight: 700;
+      padding: 1rem 2.5rem;
+      border-radius: 8px;
+      transition: all 0.4s var(--ease-premium);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
+      background: #22c55e;
+    }
+
+    /* ====== FOOTER ====== */
+    .footer {
+      background-color: #040710;
+      color: var(--color-text-secondary);
+      padding: 5rem 0 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand h3 {
+      color: var(--color-text-primary);
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand span {
+      color: var(--color-gold);
+    }
+
+    .footer-brand p {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer h4 {
+      color: var(--color-text-primary);
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-links a {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-gold);
+      padding-left: 5px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ====== REVEAL ANIMATIONS ====== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s var(--ease-premium);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-60px);
+      transition: all 0.8s var(--ease-premium);
+    }
+
+    .reveal-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(60px);
+      transition: all 0.8s var(--ease-premium);
+    }
+
+    .reveal-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 0.8s var(--ease-premium);
+    }
+
+    .reveal-scale.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Stagger children */
+    .stagger-children>*:nth-child(1) {
+      transition-delay: 0.05s;
+    }
+
+    .stagger-children>*:nth-child(2) {
+      transition-delay: 0.12s;
+    }
+
+    .stagger-children>*:nth-child(3) {
+      transition-delay: 0.19s;
+    }
+
+    .stagger-children>*:nth-child(4) {
+      transition-delay: 0.26s;
+    }
+
+    .stagger-children>*:nth-child(5) {
+      transition-delay: 0.33s;
+    }
+
+    .stagger-children>*:nth-child(6) {
+      transition-delay: 0.40s;
+    }
+
+    /* Hero section intro animations */
+    .hero-anim-1 {
+      animation: heroFadeIn 0.8s ease-out 0.2s both;
+    }
+
+    .hero-anim-2 {
+      animation: heroFadeIn 0.8s ease-out 0.4s both;
+    }
+
+    .hero-anim-3 {
+      animation: heroFadeIn 0.8s ease-out 0.6s both;
+    }
+
+    .hero-anim-4 {
+      animation: heroFadeIn 0.8s ease-out 0.8s both;
+    }
+
+    .hero-anim-5 {
+      animation: heroFadeIn 0.8s ease-out 1.0s both;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ====== CURSOR GLOW ====== */
+    .cursor-glow {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 165, 55, 0.22) 0%, rgba(212, 165, 55, 0.10) 30%, rgba(212, 165, 55, 0.03) 55%, transparent 70%);
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease-out;
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 1024px) {
+
+      .cards-grid,
+      .category-list,
+      .testi-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .dev-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-content-box {
+        max-width: 70%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: rgba(7, 9, 15, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        transition: left 0.4s var(--ease-premium);
+        transform: none;
+      }
+
+      .nav-links.active {
+        left: 0;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      section {
+        padding: 5rem 0;
+      }
+
+      .section-heading {
+        font-size: 2.2rem;
+      }
+
+      .hero-info h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-highlight {
+        font-size: 1.4rem;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-wrapper {
+        flex-direction: column;
+        gap: 2.5rem;
+      }
+
+      .cards-grid,
+      .category-list,
+      .testi-grid,
+      .gallery-grid,
+      .dev-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content-box {
+        max-width: 100%;
+        padding: 2rem;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reg-container {
+        padding: 2rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-item::after {
+        display: none;
+      }
+
+      .trust-grid {
+        gap: 2rem;
+      }
+
+      .roadmap-timeline {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      .roadmap-line {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        transform: translateX(-50%);
+      }
+
+      .roadmap-line-progress {
+        width: 100%;
+        height: 66%;
+        background: linear-gradient(to bottom, var(--color-gold) 50%, var(--color-red) 100%);
+      }
+
+      .heroes-section {
+        background-attachment: scroll;
+      }
+
+      .cursor-glow {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-info h1 {
+        font-size: 2rem;
+      }
+
+      .section-heading {
+        font-size: 1.8rem;
+      }
+
+      .invitation-card {
+        padding: 2rem 1.5rem;
+      }
+
+      .navbar {
+        padding: 1rem 1.2rem;
+      }
+    }
+
+    /* ====== PREMIUM LONDON SECTION DIVIDERS ====== */
+    .section-divider {
+      position: relative;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      z-index: 10;
+      cursor: default;
+    }
+
+    .section-divider .divider-line {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    .section-divider .divider-line::before,
+    .section-divider .divider-line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 1px;
+    }
+
+    /* Left half of line */
+    .section-divider .divider-line::before {
+      left: 0;
+      right: 50%;
+      background: linear-gradient(to right, transparent 0%, rgba(212, 165, 55, 0.08) 20%, rgba(212, 165, 55, 0.5) 100%);
+    }
+
+    /* Right half of line */
+    .section-divider .divider-line::after {
+      left: 50%;
+      right: 0;
+      background: linear-gradient(to left, transparent 0%, rgba(212, 165, 55, 0.08) 20%, rgba(212, 165, 55, 0.5) 100%);
+    }
+
+    /* Animated gold shimmer traveling along the line */
+    .section-divider .divider-shimmer {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      height: 1px;
+      transform: translateY(-50%);
+      overflow: hidden;
+    }
+
+    .section-divider .divider-shimmer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -30%;
+      width: 30%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, var(--color-gold-light), var(--color-gold), var(--color-gold-light), transparent);
+      animation: shimmerTravel 4s ease-in-out infinite;
+    }
+
+    @keyframes shimmerTravel {
+      0% {
+        left: -30%;
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      100% {
+        left: 100%;
+        opacity: 0;
+      }
+    }
+
+    /* Central ornament — London-inspired crown/diamond motif */
+    .section-divider .divider-ornament {
+      position: relative;
+      z-index: 3;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s var(--ease-premium);
+    }
+
+    /* Outer rotating border ring */
+    .section-divider .divider-ornament::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      border-top-color: var(--color-gold);
+      border-bottom-color: rgba(212, 165, 55, 0.3);
+      animation: ornamentSpin 8s linear infinite;
+    }
+
+    /* Inner glowing ring */
+    .section-divider .divider-ornament::after {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 165, 55, 0.08) 0%, transparent 70%);
+      border: 1px solid rgba(212, 165, 55, 0.15);
+    }
+
+    @keyframes ornamentSpin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* The diamond/crown SVG icon */
+    .section-divider .divider-icon {
+      position: relative;
+      z-index: 4;
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: var(--color-gold);
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 0 4px rgba(212, 165, 55, 0.4));
+      transition: all 0.4s var(--ease-premium);
+    }
+
+    /* Floating sparkle particles on each side */
+    .section-divider .divider-spark {
+      position: absolute;
+      top: 50%;
+      width: 3px;
+      height: 3px;
+      background: var(--color-gold);
+      border-radius: 50%;
+      opacity: 0;
+      animation: sparkFloat 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .section-divider .divider-spark:nth-child(1) {
+      left: 20%;
+      animation-delay: 0s;
+    }
+
+    .section-divider .divider-spark:nth-child(2) {
+      left: 35%;
+      animation-delay: 0.8s;
+      width: 2px;
+      height: 2px;
+    }
+
+    .section-divider .divider-spark:nth-child(3) {
+      right: 20%;
+      animation-delay: 1.6s;
+    }
+
+    .section-divider .divider-spark:nth-child(4) {
+      right: 35%;
+      animation-delay: 0.4s;
+      width: 2px;
+      height: 2px;
+    }
+
+    .section-divider .divider-spark:nth-child(5) {
+      left: 50%;
+      animation-delay: 1.2s;
+      margin-left: -80px;
+    }
+
+    .section-divider .divider-spark:nth-child(6) {
+      left: 50%;
+      animation-delay: 2s;
+      margin-left: 80px;
+      width: 2px;
+      height: 2px;
+    }
+
+    @keyframes sparkFloat {
+
+      0%,
+      100% {
+        opacity: 0;
+        transform: translateY(0) scale(0.5);
+      }
+
+      30% {
+        opacity: 0.8;
+        transform: translateY(-12px) scale(1);
+      }
+
+      60% {
+        opacity: 0.4;
+        transform: translateY(-20px) scale(0.8);
+      }
+    }
+
+    /* Hover interaction — the ornament grows and glows */
+    .section-divider:hover .divider-ornament {
+      transform: scale(1.3);
+      filter: drop-shadow(0 0 15px rgba(212, 165, 55, 0.4));
+    }
+
+    .section-divider:hover .divider-ornament::before {
+      border-top-color: var(--color-gold-light);
+      border-bottom-color: var(--color-gold);
+      animation-duration: 2s;
+    }
+
+    .section-divider:hover .divider-icon {
+      stroke: var(--color-gold-light);
+      filter: drop-shadow(0 0 8px rgba(212, 165, 55, 0.6));
+      transform: rotate(90deg);
+    }
+
+    .section-divider:hover .divider-line::before {
+      background: linear-gradient(to right, transparent 0%, rgba(212, 165, 55, 0.15) 20%, rgba(212, 165, 55, 0.7) 100%);
+    }
+
+    .section-divider:hover .divider-line::after {
+      background: linear-gradient(to left, transparent 0%, rgba(212, 165, 55, 0.15) 20%, rgba(212, 165, 55, 0.7) 100%);
+    }
+
+    .section-divider:hover .divider-spark {
+      animation-duration: 1.5s;
+    }
+
+    /* Side decorative fleur elements */
+    .section-divider .divider-fleur-left,
+    .section-divider .divider-fleur-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 1px;
+    }
+
+    .section-divider .divider-fleur-left {
+      right: calc(50% + 30px);
+    }
+
+    .section-divider .divider-fleur-right {
+      left: calc(50% + 30px);
+    }
+
+    .section-divider .divider-fleur-left::before,
+    .section-divider .divider-fleur-right::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      opacity: 0.5;
+      transition: all 0.4s ease;
+    }
+
+    .section-divider .divider-fleur-left::before {
+      right: 0;
+    }
+
+    .section-divider .divider-fleur-right::before {
+      left: 0;
+    }
+
+    .section-divider:hover .divider-fleur-left::before,
+    .section-divider:hover .divider-fleur-right::before {
+      opacity: 1;
+      box-shadow: 0 0 8px rgba(212, 165, 55, 0.5);
+      transform: scale(1.5);
+    }
+
+    @media (max-width: 768px) {
+      .section-divider {
+        height: 50px;
+      }
+
+      .section-divider .divider-ornament {
+        width: 34px;
+        height: 34px;
+      }
+
+      .section-divider .divider-icon {
+        width: 14px;
+        height: 14px;
+      }
+
+      .section-divider .divider-spark {
+        display: none;
+      }
+
+      .dev-card {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cursor Glow Effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="mainNav">
+    <a href="#" class="nav-logo">
+      <img
+        src="https://res.cloudinary.com/dozcviag7/image/upload/v1777447588/The_Indian_Property_Show_Logo_1-02_1_ichcyr.png"
+        alt="The Indian Property Show" style="height: 45px; width: auto;">
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#why-attend">Why Attend</a></li>
+      <li><a href="#developers">Developers</a></li>
+      <li><a href="#event-details">Event Details</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="#register" class="btn btn-primary nav-cta">Free Invitation</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <header class="hero" id="hero-section">
+    <div class="hero-bg">
+      <img src="WhatsApp_Image_2026-06-08_at_11.23.50_AM_1.jpeg"
+        alt="Premium Indian Property Showcase - Night Cityscape" />
+    </div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ====== HERO INFO ====== -->
+  <section class="hero-info" id="hero-info-section">
+    <div class="container">
+      <div class="london-badge hero-anim-1">
+        <span class="pulse-dot"></span>
+        London Edition 2026
+      </div>
+      <h1 class="hero-anim-2">India's Premium Property Investment Show,<br><span style="white-space: nowrap;">Now in
+          <span class="london-flag-text">London</span></span></h1>
+      <div class="hero-highlight hero-anim-3">50% Returns in 2 Years</div>
+      <p class="hero-anim-4">A premium, free-to-attend real estate showcase connecting UK-based NRIs and Indian-origin
+        investors
+        directly with India's leading property developers. Explore pre-launch opportunities, luxury homes,
+        villas, plots, apartments, and high-growth investment projects — with zero brokerage fees.</p>
+      <div class="hero-ctas hero-anim-5">
+        <a href="#register" class="btn btn-primary">Get Your Free Invitation</a>
+        <a href="#event-details" class="btn btn-secondary">Explore the Event</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== TRUST STRIP ====== -->
+  <section class="trust-strip">
+    <div class="container trust-grid stagger-children">
+      <div class="trust-item reveal">
+        <div class="trust-number" data-count="500">0</div>
+        <div class="trust-label">NRI Investors Expected</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-number" data-count="10">0</div>
+        <div class="trust-label">Premium Developers</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-number" data-count="0" data-suffix="%">0%</div>
+        <div class="trust-label">Brokerage Fees</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-number" data-count="1">0</div>
+        <div class="trust-label">Exclusive London Showcase</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== AMY JACKSON SECTION ====== -->
+  <section id="heroes" class="heroes-section">
+    <div class="glassy-overlay"></div>
+    <div class="heroine-wrapper">
+      <img src="1780930063430.png" alt="Amy Jackson" class="heroine-cutout-overlay" />
+    </div>
+    <div class="container">
+      <div class="hero-content-box reveal-left">
+        <h2>Meet Our Star: <span class="gold">Amy Jackson</span></h2>
+        <p>Join us at the London Edition to meet our celebrated special guest, British-Indian actress Amy
+          Jackson. As a global icon and leading lady of Indian cinema, Amy brings her unique perspective
+          on luxury living and premium real estate investments back to the UK. Don't miss this exclusive
+          opportunity to interact with her during the showcase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-content reveal-left">
+          <div class="section-tag">
+            <span class="line"></span> About The Show <span class="line"></span>
+          </div>
+          <h2>India's Most Premium Property Opportunities, Curated for London's <span
+              style="color: var(--color-gold);">NRI Community</span></h2>
+          <p>The Indian Property Show is a premium international real estate event designed to connect NRIs
+            directly with trusted Indian developers. The London Edition brings pre-launch projects, luxury
+            residences, investment-grade properties, and direct developer access to UK-based Indian
+            investors.</p>
+        </div>
+        <div class="about-image reveal-right">
+          <img src="WhatsApp_Image_2026-06-08_at_11.23.50_AM_1.jpeg" alt="Premium Property Opportunities" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== WHY ATTEND SECTION ====== -->
+  <section id="why-attend" class="why-attend">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-tag" style="justify-content: center;">
+          <span class="line"></span> Benefits <span class="line"></span>
+        </div>
+        <h2 class="section-heading">Why <span class="gold">Attend?</span></h2>
+        <p class="section-subtext">Discover what makes The Indian Property Show the most sought-after real estate event
+          for NRIs worldwide.</p>
+      </div>
+      <div class="cards-grid stagger-children">
+        <div class="feature-card reveal">
+          <div class="feature-icon">🤝</div>
+          <h3>Direct Developer Access</h3>
+          <p>Meet directly with the builders. No middlemen, full transparency.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🚀</div>
+          <h3>Pre-Launch Pricing</h3>
+          <p>Secure properties at exclusive early-bird rates before public launch.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💷</div>
+          <h3>Zero Brokerage</h3>
+          <p>Save on commission fees and invest your capital directly into the property.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💎</div>
+          <h3>Curated Indian Projects</h3>
+          <p>Only the finest, verified properties selected for premium buyers.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📈</div>
+          <h3>Investment-Focused</h3>
+          <p>Identify high-growth corridors engineered for excellent ROI.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">👨‍👩‍👧‍👦</div>
+          <h3>Family-Friendly Guidance</h3>
+          <p>Comprehensive consultation tailored to your family's future in India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== PROPERTY CATEGORIES ====== -->
+  <section class="properties">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-tag" style="justify-content: center;">
+          <span class="line"></span> Opportunities <span class="line"></span>
+        </div>
+        <h2 class="section-heading">Explore Premium <span class="gold">Opportunities</span></h2>
+      </div>
+      <div class="category-list stagger-children">
+        <div class="category-item reveal">
+          <span class="cat-icon">🏛️</span>
+          <h3>Luxury Villas</h3>
+        </div>
+        <div class="category-item reveal">
+          <span class="cat-icon">🏢</span>
+          <h3>Premium Apartments</h3>
+        </div>
+        <div class="category-item reveal">
+          <span class="cat-icon">🌳</span>
+          <h3>Residential Plots</h3>
+        </div>
+        <div class="category-item reveal">
+          <span class="cat-icon">🔑</span>
+          <h3>Pre-Launch Projects</h3>
+        </div>
+        <div class="category-item reveal">
+          <span class="cat-icon">📊</span>
+          <h3>High-Growth Corridors</h3>
+        </div>
+        <div class="category-item reveal">
+          <span class="cat-icon">🤝</span>
+          <h3>NRI-Focused Consultation</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== ROADMAP SECTION ====== -->
+  <section class="roadmap-section">
+    <div class="container">
+      <div class="roadmap-header reveal">
+        <div class="roadmap-event-tag">
+          <span class="line"></span> EVENT TIMELINE <span class="line"></span>
+        </div>
+        <h2 class="roadmap-title">2026 Global Roadmap</h2>
+      </div>
+
+      <div class="roadmap-wrapper reveal">
+        <!-- Connecting Line -->
+        <div class="roadmap-track">
+          <div class="roadmap-track-segment bg-dark-blue" style="width: 50%;"></div>
+          <div class="roadmap-track-segment bg-red" style="width: 25%;"></div>
+          <div class="roadmap-track-segment bg-light-grey" style="width: 25%;"></div>
+        </div>
+
+        <!-- Points -->
+        <div class="roadmap-points-container">
+
+          <!-- Germany -->
+          <div class="roadmap-item">
+            <div class="rm-circle rm-completed">
+              <span class="rm-icon">✓</span>
+              <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="rm-flag">
+            </div>
+            <div class="rm-content">
+              <h3 class="rm-country">GERMANY</h3>
+              <p class="rm-date">APR 25-26</p>
+              <span class="rm-badge rm-badge-completed">COMPLETED</span>
+            </div>
+          </div>
+
+          <!-- USA -->
+          <div class="roadmap-item">
+            <div class="rm-circle rm-completed">
+              <span class="rm-icon">✓</span>
+              <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" class="rm-flag">
+            </div>
+            <div class="rm-content">
+              <h3 class="rm-country">USA</h3>
+              <p class="rm-date">APR - MAY 2026</p>
+              <span class="rm-badge rm-badge-completed">COMPLETED</span>
+            </div>
+          </div>
+
+          <!-- London -->
+          <div class="roadmap-item">
+            <div class="rm-circle rm-active">
+              <span class="rm-text">LIVE</span>
+              <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="rm-flag">
+            </div>
+            <div class="rm-content">
+              <h3 class="rm-country">LONDON</h3>
+              <p class="rm-date">TBA</p>
+              <span class="rm-badge rm-badge-active">ACTIVE NOW</span>
+            </div>
+          </div>
+
+          <!-- Japan -->
+          <div class="roadmap-item">
+            <div class="rm-circle rm-upcoming">
+              <span class="rm-text">JP</span>
+              <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag" class="rm-flag">
+            </div>
+            <div class="rm-content">
+              <h3 class="rm-country">JAPAN</h3>
+              <p class="rm-date">TBA</p>
+              <span class="rm-badge rm-badge-upcoming">UPCOMING</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== DEVELOPERS SECTION ====== -->
+  <section id="developers" class="developers horizontal-scroll-section">
+    <div class="horizontal-scroll-header">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-tag" style="justify-content: center;">
+            <span class="line"></span> Partners <span class="line"></span>
+          </div>
+          <h2 class="section-heading">Featured <span class="gold">Developers</span></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="horizontal-scroll-container">
+      <div class="horizontal-scroll-track" id="dev-track">
+        <div class="dev-card reveal">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
+              alt="Developer 01" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 01</h3>
+            <p><strong>Project Types:</strong> Luxury Villas, Plots</p>
+            <p><strong>Region:</strong> Hyderabad, Bengaluru</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+        <div class="dev-card reveal">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
+              alt="Developer 02" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 02</h3>
+            <p><strong>Project Types:</strong> Premium Apartments</p>
+            <p><strong>Region:</strong> Mumbai, Pune</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+        <div class="dev-card reveal">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
+              alt="Developer 03" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 03</h3>
+            <p><strong>Project Types:</strong> Commercial, Pre-launch</p>
+            <p><strong>Region:</strong> NCR, Gurugram</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+        <div class="dev-card reveal">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
+              alt="Developer 04" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 04</h3>
+            <p><strong>Project Types:</strong> Smart Homes, Plots</p>
+            <p><strong>Region:</strong> Vizag, Chennai</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+        <!-- Additional placeholder for demonstration of scrolling -->
+        <div class="dev-card reveal">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
+              alt="Developer 05" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 05</h3>
+            <p><strong>Project Types:</strong> Investment Plots</p>
+            <p><strong>Region:</strong> Goa, Kerala</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== EVENT DETAILS ====== -->
+  <section id="event-details" class="event-details">
+    <div class="container">
+      <div class="invitation-card reveal-scale">
+        <h2>Event Details</h2>
+        <div class="detail-row">
+          <span class="detail-label">Location</span>
+          <span class="detail-value">London, United Kingdom</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Date</span>
+          <span class="detail-value gold">11 – 12 July 2026</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Entry</span>
+          <span class="detail-value">Free Invitation Only</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Audience</span>
+          <span class="detail-value" style="font-size: 0.9rem; font-weight: normal; text-align: right;">NRIs,
+            Indian-origin investors, families, professionals, HNIs</span>
+        </div>
+        <div class="detail-row" style="border: none;">
+          <span class="detail-label">Format</span>
+          <span class="detail-value" style="font-size: 0.9rem; font-weight: normal; text-align: right;">Premium
+            property showcase and one-on-one developer interaction</span>
+        </div>
+        <a href="#register" class="btn btn-primary" style="margin-top: 2rem; width: 100%;">Request
+          Invitation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-tag" style="justify-content: center;">
+          <span class="line"></span> Testimonials <span class="line"></span>
+        </div>
+        <h2 class="section-heading">What Investors <span class="gold">Say</span></h2>
+      </div>
+      <div class="testi-grid stagger-children">
+        <div class="testi-card reveal">
+          <div class="testi-icon">"</div>
+          <p class="testi-text">A very professional way to explore Indian property options without dealing
+            with multiple agents.</p>
+          <div class="testi-author">NRI Investor, London</div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-icon">"</div>
+          <p class="testi-text">The direct developer interaction helped us understand pricing, timelines, and
+            investment potential clearly.</p>
+          <div class="testi-author">Property Buyer, Birmingham</div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-icon">"</div>
+          <p class="testi-text">Perfect for NRIs who want serious property opportunities in India. Highly
+            recommended.</p>
+          <div class="testi-author">HNI Investor, Manchester</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== REGISTRATION ====== -->
+  <section id="register" class="registration">
+    <div class="container">
+      <div class="reg-container reveal-scale">
+        <div class="text-center" style="margin-bottom: 2.5rem;">
+          <div class="section-tag" style="justify-content: center;">
+            <span class="line"></span> Register <span class="line"></span>
+          </div>
+          <h2 class="section-heading">Secure Your <span class="gold">Invitation</span></h2>
+          <p class="section-subtext">Limited seats. Free invitation subject to confirmation.</p>
+        </div>
+
+        <form action="#" method="POST" id="registrationForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="+44" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">City in UK</label>
+              <input type="text" class="form-control" placeholder="London" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Interested Property Type</label>
+              <select class="form-control" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Villa">Luxury Villa</option>
+                <option value="Apartment">Premium Apartment</option>
+                <option value="Plot">Residential Plot</option>
+                <option value="Commercial">Commercial/Pre-launch</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Investment Budget</label>
+              <select class="form-control" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="under-1cr">Under ₹1 Cr</option>
+                <option value="1-3cr">₹1 Cr - ₹3 Cr</option>
+                <option value="3-5cr">₹3 Cr - ₹5 Cr</option>
+                <option value="above-5cr">Above ₹5 Cr</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Preferred Indian City</label>
+              <input type="text" class="form-control" placeholder="e.g. Hyderabad, Mumbai, NCR, Bengaluru" required>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Message (Optional)</label>
+              <textarea class="form-control" placeholder="Tell us more about your investment goals..."></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary"
+                style="width: 100%; max-width: 350px; font-size: 1rem; padding: 1.1rem 2rem;">Reserve My Free
+                Invitation</button>
+              <span class="form-note">Your details are secure. We do not spam.</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-spark"></div>
+    <div class="divider-line"></div>
+    <div class="divider-shimmer"></div>
+    <div class="divider-fleur-left"></div>
+    <div class="divider-ornament">
+      <svg class="divider-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 2L15 8H9L12 2Z M12 22L9 16H15L12 22Z M2 12L8 9V15L2 12Z M22 12L16 15V9L22 12Z M12 8L16 12L12 16L8 12Z" />
+      </svg>
+    </div>
+    <div class="divider-fleur-right"></div>
+  </div>
+
+  <!-- ====== WHATSAPP CTA ====== -->
+  <section class="whatsapp-cta">
+    <div class="container reveal">
+      <h2>Want quick assistance?</h2>
+      <p>Speak to our event team on WhatsApp for instant help.</p>
+      <a href="https://wa.me/919152565195" target="_blank" class="btn-whatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img
+            src="https://res.cloudinary.com/dozcviag7/image/upload/v1777447588/The_Indian_Property_Show_Logo_1-02_1_ichcyr.png"
+            alt="The Indian Property Show" style="height: 55px; width: auto; margin-bottom: 1.5rem;">
+          <p>London Edition 2026</p>
+          <p>Premium Indian Real Estate Showcase for NRIs</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About the Event</a></li>
+            <li><a href="#developers">Featured Developers</a></li>
+            <li><a href="#register">Register Now</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:contact@indianpropertyshow.com">Email Us</a></li>
+            <li><a href="https://wa.me/919152565195" target="_blank">WhatsApp</a></li>
+            <li>London, United Kingdom</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Indian Property Show. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ============================================
+    // PREMIUM INTERACTIVE JAVASCRIPT
+    // ============================================
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // ====== CURSOR GLOW ======
+      const cursorGlow = document.getElementById('cursorGlow');
+      if (cursorGlow && window.innerWidth > 768) {
+        let mouseX = 0, mouseY = 0;
+        let glowX = 0, glowY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+          glowX += (mouseX - glowX) * 0.08;
+          glowY += (mouseY - glowY) * 0.08;
+          cursorGlow.style.left = glowX + 'px';
+          cursorGlow.style.top = glowY + 'px';
+          requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+      }
+
+      // ====== PARTICLE SYSTEM ======
+      const canvas = document.getElementById('particles-canvas');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animId;
+
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+          constructor() {
+            this.reset();
+          }
+          reset() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 1.5 + 0.5;
+            this.speedX = (Math.random() - 0.5) * 0.3;
+            this.speedY = (Math.random() - 0.5) * 0.3;
+            this.opacity = Math.random() * 0.5 + 0.1;
+            this.pulse = Math.random() * Math.PI * 2;
+          }
+          update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.pulse += 0.02;
+            this.opacity = 0.15 + Math.sin(this.pulse) * 0.15;
+
+            if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+              this.reset();
+            }
+          }
+          draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(212, 165, 55, ${this.opacity})`;
+            ctx.fill();
+          }
+        }
+
+        const particleCount = Math.min(60, Math.floor(window.innerWidth / 25));
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new Particle());
+        }
+
+        function animateParticles() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          particles.forEach(p => {
+            p.update();
+            p.draw();
+          });
+
+          // Draw connections
+          for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+              const dx = particles[i].x - particles[j].x;
+              const dy = particles[i].y - particles[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 120) {
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(212, 165, 55, ${0.06 * (1 - dist / 120)})`;
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+              }
+            }
+          }
+
+          animId = requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+      }
+
+      // ====== MOBILE MENU ======
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+
+      if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          mobileBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+      }
+
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          if (mobileBtn) mobileBtn.textContent = '☰';
+        });
+      });
+
+      // ====== NAVBAR SCROLL ======
+      const navbar = document.getElementById('mainNav');
+      let lastScroll = 0;
+
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > 80) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+      });
+
+      // ====== SCROLL REVEAL SYSTEM ======
+      const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -60px 0px'
+      });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // ====== ANIMATED COUNTERS ======
+      const counters = document.querySelectorAll('.trust-number[data-count]');
+      let countersAnimated = false;
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !countersAnimated) {
+            countersAnimated = true;
+            animateCounters();
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(c => counterObserver.observe(c));
+
+      function animateCounters() {
+        counters.forEach(counter => {
+          const target = parseInt(counter.dataset.count);
+          const suffix = counter.dataset.suffix || '+';
+          const duration = 2000;
+          const start = performance.now();
+
+          function updateCounter(now) {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.round(target * eased);
+
+            if (target === 0) {
+              counter.textContent = '0%';
+            } else {
+              counter.textContent = current + suffix;
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            }
+          }
+
+          requestAnimationFrame(updateCounter);
+        });
+      }
+
+      // ====== TILT EFFECT ON CARDS ======
+      const tiltCards = document.querySelectorAll('.feature-card, .dev-card, .testi-card');
+
+      tiltCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          if (window.innerWidth < 768) return;
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = (y - centerY) / centerY * -4;
+          const rotateY = (x - centerX) / centerX * 4;
+
+          card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
+      });
+
+      // ====== MAGNETIC BUTTON EFFECT ======
+      const magneticBtns = document.querySelectorAll('.btn-primary, .btn-secondary');
+
+      magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+          if (window.innerWidth < 768) return;
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) translateY(-3px)`;
+        });
+
+        btn.addEventListener('mouseleave', () => {
+          btn.style.transform = '';
+        });
+      });
+
+      // ====== PARALLAX ON HERO ======
+      const heroSection = document.querySelector('.hero');
+      const heroBg = document.querySelector('.hero-bg img');
+
+      if (heroSection && heroBg) {
+        window.addEventListener('scroll', () => {
+          const scrolled = window.scrollY;
+          if (scrolled < window.innerHeight) {
+            heroBg.style.transform = `scale(1.05) translateY(${scrolled * 0.15}px)`;
+          }
+        });
+      }
+
+      // ====== FORM INTERACTION ======
+      const formControls = document.querySelectorAll('.form-control');
+      formControls.forEach(control => {
+        control.addEventListener('focus', () => {
+          control.parentElement.style.transform = 'scale(1.02)';
+          control.parentElement.style.transition = 'transform 0.3s ease';
+        });
+        control.addEventListener('blur', () => {
+          control.parentElement.style.transform = '';
+        });
+      });
+
+      // ====== SMOOTH SECTION TRANSITIONS ======
+      // Fade sections in with a slight scale on scroll
+      const sections = document.querySelectorAll('section');
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'scale(1)';
+          }
+        });
+      }, {
+        threshold: 0.05
+      });
+
+      sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'scale(0.98)';
+        section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        sectionObserver.observe(section);
+      });
+
+      // ====== TYPED TEXT EFFECT FOR HERO ======
+      const heroHighlight = document.querySelector('.hero-highlight');
+      if (heroHighlight) {
+        const phrases = ['50% Returns in 2 Years', 'Zero Brokerage', 'Pre-Launch Access', 'Premium Developers'];
+        let currentPhrase = 0;
+
+        function cyclePhrase() {
+          heroHighlight.style.opacity = '0';
+          heroHighlight.style.transform = 'translateY(10px)';
+
+          setTimeout(() => {
+            currentPhrase = (currentPhrase + 1) % phrases.length;
+            heroHighlight.textContent = phrases[currentPhrase];
+            heroHighlight.style.opacity = '1';
+            heroHighlight.style.transform = 'translateY(0)';
+          }, 400);
+        }
+
+        heroHighlight.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        setInterval(cyclePhrase, 3500);
+      }
+
+      // ====== GALLERY HOVER RIPPLE ======
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('mouseenter', () => {
+          item.style.zIndex = '5';
+        });
+        item.addEventListener('mouseleave', () => {
+          item.style.zIndex = '';
+        });
+      });
+
+      // ====== HORIZONTAL SCROLL FOR DEVELOPERS ======
+      const hSection = document.querySelector('.horizontal-scroll-section');
+      const hTrack = document.getElementById('dev-track');
+
+      if (hSection && hTrack) {
+        let hScrollPos = 0;
+        let isLocked = false;
+        let isCooldown = false;
+
+        function getMaxTranslate() {
+          return Math.max(0, hTrack.scrollWidth - window.innerWidth + 100);
+        }
+
+        window.addEventListener('wheel', (e) => {
+          if (window.innerWidth <= 768) return;
+          if (isCooldown) return;
+
+          const rect = hSection.getBoundingClientRect();
+          const maxT = getMaxTranslate();
+
+          // Reset the track if they scroll up past the section entirely
+          if (rect.top > 50) {
+            hScrollPos = 0;
+            hTrack.style.transform = `translateX(0px)`;
+          }
+
+          if (!isLocked) {
+            // LOCK CONDITION: 
+            // 1. Scrolling down (deltaY > 0)
+            // 2. We hit the top of the section (rect.top is near 0)
+            // 3. We haven't finished the horizontal scroll
+            if (e.deltaY > 0 && rect.top <= 10 && rect.top >= -200 && hScrollPos < maxT) {
+              isLocked = true;
+              document.body.classList.add('scroll-locked');
+              // Snap exactly to top of section for clean lock
+              window.scrollTo({ top: window.scrollY + rect.top, behavior: 'auto' });
+            }
+          }
+
+          if (isLocked) {
+            e.preventDefault();
+
+            // If they scroll UP while locked, immediately unlock and let them scroll up!
+            if (e.deltaY < 0) {
+              isLocked = false;
+              document.body.classList.remove('scroll-locked');
+              isCooldown = true;
+              setTimeout(() => isCooldown = false, 500);
+              return;
+            }
+
+            // Otherwise they are scrolling DOWN -> move the track horizontally
+            hScrollPos += e.deltaY * 1.5;
+
+            // If they reach the end of the horizontal track
+            if (hScrollPos >= maxT) {
+              hScrollPos = maxT;
+              isLocked = false;
+              document.body.classList.remove('scroll-locked');
+              isCooldown = true;
+              setTimeout(() => isCooldown = false, 500);
+            }
+
+            hTrack.style.transform = `translateX(-${hScrollPos}px)`;
+          }
+        }, { passive: false });
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>
