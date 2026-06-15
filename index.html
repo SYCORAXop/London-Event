@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Indian Property Show — London Edition 2026</title>
+  <title>The Indian Property Show — London Edition (11th & 12th July 2026)</title>
   <meta name="description"
     content="Premium Indian real estate investment event in London. Explore luxury homes, villas, and high-growth investment projects tailored for NRIs.">
   <!-- Google Fonts -->
@@ -669,6 +669,22 @@
       color: var(--color-text-secondary);
     }
 
+    @media (max-width: 768px) {
+      .trust-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1rem;
+      }
+
+      .trust-item::after {
+        display: none;
+      }
+
+      .trust-number {
+        font-size: 2.5rem;
+      }
+    }
+
     /* ====== ABOUT SECTION ====== */
     .about-section {
       background: var(--color-bg-deep);
@@ -805,6 +821,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      min-height: 280px;
       cursor: pointer;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       border: 1px solid rgba(255, 215, 0, 0.1);
@@ -1347,7 +1364,7 @@
 
     /* ====== DEVELOPERS SECTION (HORIZONTAL SCROLL) ====== */
     .developers {
-      background: var(--color-bg-deep);
+      background: transparent;
     }
 
     .horizontal-scroll-section {
@@ -2707,8 +2724,23 @@
         display: none;
       }
 
+      .horizontal-scroll-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+      }
+
+      .horizontal-scroll-track {
+        transform: none !important;
+        padding: 1rem;
+        gap: 1.5rem;
+      }
+
       .dev-card {
         width: 85vw;
+        scroll-snap-align: center;
       }
     }
 
@@ -2805,10 +2837,7 @@
     
     <div class="hero-orb hero-orb-1"></div>
     <div class="hero-orb hero-orb-2"></div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
+
   </header>
   <div class="starlight-overlay"></div>
 
@@ -2817,7 +2846,7 @@
     <div class="container">
       <div class="london-badge hero-anim-1">
         <span class="pulse-dot"></span>
-        London Edition 2026
+        London Edition • 11th & 12th July 2026
       </div>
       <h1 class="hero-anim-2">India's Premium Property Investment Show,<br><span style="white-space: nowrap;">Now in
           <span class="london-flag-text">London</span></span></h1>
@@ -3229,7 +3258,7 @@
             </div>
             <div class="rm-content">
               <h3 class="rm-country">LONDON</h3>
-              <p class="rm-date">TBA</p>
+              <p class="rm-date">11-12 JULY 2026</p>
               <span class="rm-badge rm-badge-active">ACTIVE NOW</span>
             </div>
           </div>
@@ -3290,67 +3319,106 @@
         <div class="dev-card">
           <div class="dev-logo-wrapper">
             <img
-              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
-              alt="Developer 01" class="dev-logo-image">
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1778158759/tulip_ivwp3n.jpg"
+              alt="Rubrick Construction" class="dev-logo-image">
           </div>
           <div class="dev-info">
-            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 01</h3>
-            <p><strong>Project Types:</strong> Luxury Villas, Plots</p>
-            <p><strong>Region:</strong> Hyderabad, Bengaluru</p>
-            <a href="#register" class="dev-cta">View Opportunities →</a>
-          </div>
-        </div>
-        <div class="dev-card">
-          <div class="dev-logo-wrapper">
-            <img
-              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
-              alt="Developer 02" class="dev-logo-image">
-          </div>
-          <div class="dev-info">
-            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 02</h3>
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Rubrick Construction</h3>
             <p><strong>Project Types:</strong> Premium Apartments</p>
-            <p><strong>Region:</strong> Mumbai, Pune</p>
+            <p><strong>Region:</strong> Hyderabad</p>
             <a href="#register" class="dev-cta">View Opportunities →</a>
           </div>
         </div>
+        
         <div class="dev-card">
           <div class="dev-logo-wrapper">
             <img
-              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
-              alt="Developer 03" class="dev-logo-image">
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1781538657/Copy-of-s03_qazd2y.jpg"
+              alt="Casagrand" class="dev-logo-image">
           </div>
           <div class="dev-info">
-            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 03</h3>
-            <p><strong>Project Types:</strong> Commercial, Pre-launch</p>
-            <p><strong>Region:</strong> NCR, Gurugram</p>
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Casagrand</h3>
+            <p><strong>Project Types:</strong> Premium Apartments</p>
+            <p><strong>Region:</strong> Hyderabad, Chennai, Bengaluru, Pune</p>
             <a href="#register" class="dev-cta">View Opportunities →</a>
           </div>
         </div>
+
         <div class="dev-card">
           <div class="dev-logo-wrapper">
             <img
-              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
-              alt="Developer 04" class="dev-logo-image">
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1781538659/cef78c_ad19dd501403443ca143a9d805e5b174_mv2_ajzqb6.jpg"
+              alt="Greenway" class="dev-logo-image">
           </div>
           <div class="dev-info">
-            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 04</h3>
-            <p><strong>Project Types:</strong> Smart Homes, Plots</p>
-            <p><strong>Region:</strong> Vizag, Chennai</p>
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Greenway</h3>
+            <p><strong>Project Types:</strong> Luxury Villas, Plots</p>
+            <p><strong>Region:</strong> Wada, Mumbai</p>
             <a href="#register" class="dev-cta">View Opportunities →</a>
           </div>
         </div>
-        <!-- Additional placeholder for demonstration of scrolling -->
+
         <div class="dev-card">
           <div class="dev-logo-wrapper">
             <img
-              src="https://res.cloudinary.com/dozcviag7/image/upload/v1780927134/WhatsApp_Image_2026-06-08_at_7.28.39_PM_pb3ntz.jpg"
-              alt="Developer 05" class="dev-logo-image">
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1781538657/image_2_joiyra.jpg"
+              alt="Kocept Ambiance" class="dev-logo-image">
           </div>
           <div class="dev-info">
-            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Developer 05</h3>
-            <p><strong>Project Types:</strong> Investment Plots</p>
-            <p><strong>Region:</strong> Goa, Kerala</p>
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Kocept Ambiance</h3>
+            <p><strong>Project Types:</strong> Premium Apartments</p>
+            <p><strong>Region:</strong> Bangalore, Hyderabad</p>
             <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+
+        <div class="dev-card">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1781538656/verde-vista-entrance-render_osgjtu.jpg"
+              alt="TVS Emerald" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">TVS Emerald</h3>
+            <p><strong>Project Types:</strong> Premium Apartments</p>
+            <p><strong>Region:</strong> Bengaluru, Chennai</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+
+        <div class="dev-card">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1781538651/dac.jpg_lvnvlu.jpg"
+              alt="DAC Developers" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">DAC Developers</h3>
+            <p><strong>Project Types:</strong> Premium Apartments, Luxury Villas</p>
+            <p><strong>Region:</strong> Chennai</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+
+        <div class="dev-card">
+          <div class="dev-logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/dozcviag7/image/upload/v1781539672/silver-sands-ongoing-project-2_myktle.jpg"
+              alt="Silversands" class="dev-logo-image">
+          </div>
+          <div class="dev-info">
+            <h3 style="color: var(--color-gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Silversands</h3>
+            <p><strong>Project Types:</strong> Premium Apartments, Luxury Villas</p>
+            <p><strong>Region:</strong> Hyderabad, Vizag</p>
+            <a href="#register" class="dev-cta">View Opportunities →</a>
+          </div>
+        </div>
+
+        <div class="dev-card" style="display: flex; align-items: center; justify-content: center; background: rgba(255, 215, 0, 0.05); border: 2px dashed var(--color-gold); min-height: 400px;">
+          <div class="dev-info" style="text-align: center;">
+            <h3 style="color: var(--color-gold); font-size: 1.8rem; margin-bottom: 1rem;">And Many More!!!</h3>
+            <p>Join us to meet the leading developers across India.</p>
+            <a href="#register" class="btn btn-primary" style="margin-top: 1.5rem;">Register Now</a>
           </div>
         </div>
       </div>
@@ -3713,7 +3781,8 @@
           reset() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 1.5 + 0.5;
+            let baseSize = Math.random() * 2.0 + 1.0;
+            this.size = window.innerWidth <= 768 ? baseSize * 0.5 : baseSize;
             this.speedX = (Math.random() - 0.5) * 0.3;
             this.speedY = (Math.random() - 0.5) * 0.3;
             this.opacity = Math.random() * 0.5 + 0.1;
@@ -3737,7 +3806,7 @@
           }
         }
 
-        const particleCount = Math.min(60, Math.floor(window.innerWidth / 25));
+        const particleCount = Math.min(40, Math.floor(window.innerWidth / 40));
         for (let i = 0; i < particleCount; i++) {
           particles.push(new Particle());
         }
@@ -4130,9 +4199,10 @@
 
     function init() {
       particlesArray = [];
-      let numberOfParticles = (canvas.height * canvas.width) / 9000;
+      let numberOfParticles = (canvas.height * canvas.width) / 15000;
       for (let i = 0; i < numberOfParticles; i++) {
-        let size = (Math.random() * 0.8) + 0.3;
+        let baseSize = (Math.random() * 1.2) + 0.6;
+        let size = window.innerWidth <= 768 ? baseSize * 0.5 : baseSize;
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
         let directionX = (Math.random() * 0.5) - 0.25;
